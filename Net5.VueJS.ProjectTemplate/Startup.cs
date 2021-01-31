@@ -28,7 +28,7 @@ namespace Net5.VueJS.ProjectTemplate
             services.AddControllers();
             services.AddSpaStaticFiles(configuration =>
             {
-                configuration.RootPath = "ClientApp";
+                configuration.RootPath = "ClientApp/dist";
             });
         }
 
@@ -54,7 +54,7 @@ namespace Net5.VueJS.ProjectTemplate
                 if (env.IsDevelopment())
                     spa.Options.SourcePath = "ClientApp";
                 else
-                    spa.Options.SourcePath = "dist";
+                    spa.Options.SourcePath = "ClientApp";
 
                 if (env.IsDevelopment())
                 {
